@@ -1,0 +1,99 @@
+/* Defauts*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("../assets/img/4classes-art-bg.jpeg");
+    background-size: cover;
+}
+
+/* Menu */
+.menuBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--font-primary);
+    font-size: 24px;
+    background-color: #FCA311;
+    height: 8vh;
+    margin-bottom: 20px;
+    width: 100% !important;
+}
+
+.menuBar p{
+    color: black;
+}
+
+.menuBar a{ text-decoration: none;}
+
+.menuBar a:hover{
+    opacity: 0.7;
+}
+
+.menuBar .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.menuItens{
+    list-style: none;
+    display: flex;
+}
+
+.menuItem{
+    margin-left: 32px;
+}
+
+.menuBarButton{
+    cursor: pointer;
+    display: none;
+    background: #000;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+}
+
+/* Menu de Navegação (Responsividade)*/
+@media (max-width: 768px) {
+    .menuItens{
+        position: fixed;
+        top: 8vh;
+        right: 0;
+        width: 40vw;
+        height: 92vh;
+        background: #FCA311;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        z-index: 1;
+        transition: transform 1s ease-in-out;
+    }
+
+    .menuItem{
+        margin-left: 0;
+        opacity: 0;
+        transition: transform 1s ease-in-out;
+    }
+
+    .menuBarButton{
+        display: block;
+    }
+    
+
+    .menuBarButton:focus + .menuItens {
+            transform: translateX(0);
+        }
+        /*.menuItens*/
+        .menuItem{
+            opacity: 100%;
+        }
+
+    body{
+        background-image: none !important;
+        background-color: brown;
+    }
+}
