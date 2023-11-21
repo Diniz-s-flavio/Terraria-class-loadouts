@@ -5,8 +5,20 @@
 }
 
 body{
-    background-image: url("../assets/img/4classes-art-bg.jpeg");
+    background-image: url("../assets/img/light-day-t-bg.jpg");
     background-size: cover;
+}
+
+.content-container{
+    background-color: #7b573d;
+    height: 100vh;
+    width: 90vw;
+    margin-left: 5vw;
+    border-radius: 5px;
+}
+
+.class-page{
+    margin-top: 62px;
 }
 
 /* Menu */
@@ -16,9 +28,9 @@ body{
     align-items: center;
     font-family: var(--font-primary);
     font-size: 24px;
-    background-color: #FCA311;
+    background-color: #7b573d;
     height: 8vh;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: 100% !important;
 }
 
@@ -64,7 +76,7 @@ body{
         right: 0;
         width: 40vw;
         height: 92vh;
-        background: #FCA311;
+        background: #7b573d;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
