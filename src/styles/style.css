@@ -42,6 +42,11 @@ body{
 
 .menuBar a:hover{
     opacity: 0.7;
+    color: white;
+}
+
+.menuBar p:hover{
+    color: white;
 }
 
 .menuBar .logo {
@@ -106,6 +111,6 @@ body{
 
     body{
         background-image: none !important;
-        background-color: brown;
+        background-color: green;
     }
 }
