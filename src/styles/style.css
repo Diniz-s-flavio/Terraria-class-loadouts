@@ -1,4 +1,13 @@
-/* Defauts*/
+
+/** Css Variables*/
+root{
+    --text-font-size:36px;
+    --font-primary: arial, helvetica;
+    --font-secondary: sans-serif;
+    --font-action: sans-serif;
+}
+
+/* Defaults*/
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +24,7 @@ body{
     width: 90vw;
     margin-left: 5vw;
     border-radius: 5px;
+    padding: 10px;
 }
 
 .class-page{
@@ -114,3 +124,41 @@ body{
         background-color: green;
     }
 }
+
+/* Content Default*/
+.content-title{
+    align-self: center !important;
+    justify-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.content-container img{
+    
+    width: 236px;
+    height: 296px;
+    border: #5e412d solid 10px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.class-art{
+    border-radius: 10px !important; 
+}
+
+.class-overview{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.class-definition-text{
+    margin: 1rem 1.5rem;
+}
+
+.class-definition-text p{
+    text-align: justify;
+    font-size: var(--text-font-size);
+    font-family: var(--font-secondary);
+}
+
