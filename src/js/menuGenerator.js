@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <p>Mago</p>
         </a></li>
         <li class="menuItem"><a href="../content/melee-class.html">
-            <p>Melee</p>
+            <p>Guerrero</p>
         </a></li>
         <li class="menuItem"><a href="../content/ranger-class.html">
             <p>Atirador</p>
