@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=PT+Sans+Narrow:wght@400;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap');
 /** Css Variables*/
-root{
-    --text-font-size:36px;
+:root{
+    --text-font-size-min: 18px;
+    --text-font-size-nav: 24px;
+    --text-font-size-title: 30px;
     --font-primary: 'PT Sans Narrow', helvetica;
-    --font-secondary: Verdana,Helvetica,Arial,sans-serif;
+    --font-secondary: Verdana, Helvetica, Arial, sans-serif;
     --font-action: sans-serif;
 }
 
@@ -16,6 +18,15 @@ root{
 body{
     background-image: url("../assets/img/light-day-t-bg.jpg");
     background-size: cover;
+}
+
+h1, h2 {
+    font-family: var(--font-primary);
+    font-size: var(--text-font-size-title);
+}
+p{
+    font-family: var(--font-secondary);
+    font-size: var(--text-font-size-min);
 }
 
 .content-container{
@@ -32,13 +43,19 @@ body{
     margin-top: 62px;
 }
 
+.glass-footer a{
+    text-decoration: none;
+    color: white;
+    float: right;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
 /* Menu */
 .menuBar {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: var(--font-primary);
-    font-size: 24px;
     background-image: url("../assets/img/grass-ground.png");
     background-size: contain;
     height: 8vh;
@@ -48,7 +65,8 @@ body{
 
 .menuBar p{
     color: white;
-    font-family: var(--font-primary);
+    font-family: 'PT Sans Narrow', helvetica;
+    font-size: var(--text-font-size-nav);
 }
 
 .menuBar a{ text-decoration: none;}
@@ -62,7 +80,6 @@ body{
 }
 
 .menuBar .logo {
-    font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
@@ -87,6 +104,11 @@ body{
 
 /* Menu de Navegação (Responsividade)*/
 @media (max-width: 768px) {
+    .menuBar{
+        height: 10vh;
+        background-size: cover;
+    }
+
     .menuItens{
         position: fixed;
         top: 8vh;
@@ -168,6 +190,14 @@ body{
     text-align: center;
 }
 
+.glass-footer{
+    background-image: url("../assets/img/grass-ground-footer.png");
+    margin-top: 30px;
+    width: 100% !important;
+    height: 8vh !important;
+    background-size: contain;
+}
+
 /* Home Styles*/
 #home-main-title {
     background-color: #5e412d;
@@ -237,6 +267,34 @@ body{
 .class-arts .art-card h2{
     padding: 5px;
     margin-bottom: 5px;
+}
+
+.home-text{
+    margin: 30px 10px 5% 5%;
+}
+
+@media (max-width:768px) {
+    #home-main-title{
+        height: 5rem;
+        padding: 10px;
+    }
+
+    .class-arts{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .class-arts .art-card{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .class-arts .art-card h2{
+        padding: 10px;
+    }
 }
 
 /* Single Class*/
