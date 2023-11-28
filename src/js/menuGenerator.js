@@ -7,9 +7,12 @@ document.addEventListener("DOMContentLoaded", function() {
     navElement.innerHTML = `
     <div>
     <a href="../../../index.html">
-        <strong>
-            <p class="menuHomeButton">Terra Loadout</p>
-        </strong>
+        <div class="logo">
+            <img src="/src/assets/img/tree-icon.png" alt="" class="logo-img">
+            <strong>
+                <p class="menuHomeButton">Loadout</p>
+            </strong>
+        </div>
     </a>
     </div>
     <button class="menuBarButton">

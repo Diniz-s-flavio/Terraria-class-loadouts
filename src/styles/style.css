@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=PT+Sans+Narrow:wght@400;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap');
-/** Css Variables*/
+/** ------------- Css Variables ------------- **/
 :root{
     --text-font-size-min: 18px;
     --text-font-size-nav: 24px;
@@ -9,7 +9,7 @@
     --font-action: sans-serif;
 }
 
-/* Defaults*/
+/* ------------- Defaults ------------- */
 *{
     margin: 0;
     padding: 0;
@@ -51,7 +51,7 @@ p{
     margin-right: 20px;
 }
 
-/* Menu */
+/* ------------- Menu ------------- */
 .menuBar {
     display: flex;
     justify-content: space-around;
@@ -67,6 +67,19 @@ p{
     color: white;
     font-family: 'PT Sans Narrow', helvetica;
     font-size: var(--text-font-size-nav);
+}
+.logo p{
+    font-size: 20px;
+    letter-spacing: normal;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-img{
+    height: 4vh;
 }
 
 .menuBar a{ text-decoration: none;}
@@ -107,15 +120,24 @@ p{
     .menuBar{
         height: 10vh;
         background-size: cover;
+        position: fixed;
+        top: 0;
+        z-index: 4;
+    }
+
+    .main-home {
+        margin-top: 12vh;
     }
 
     .menuItens{
         position: fixed;
-        top: 8vh;
+        top: 8.5vh;
         right: 0;
         width: 40vw;
         height: 92vh;
-        background: #7b573d;
+        background-image: url("/src/assets/img/grass-ground-menu.png");
+        background-size: cover;
+        border-image: none;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -149,13 +171,15 @@ p{
     }
 }
 
-/* Content Default*/
+/* ------------- Content Default ------------- */
+
 .content-title{
     align-self: center !important;
     justify-self: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 .content-container img{
     
     width: 236px;
@@ -198,7 +222,7 @@ p{
     background-size: contain;
 }
 
-/* Home Styles*/
+/* ------------- Home Styles ------------- */
 #home-main-title {
     background-color: #5e412d;
     margin-top: 0px;
@@ -273,32 +297,9 @@ p{
     margin: 30px 10px 5% 5%;
 }
 
-@media (max-width:768px) {
-    #home-main-title{
-        height: 5rem;
-        padding: 10px;
-    }
+/* ------------- Single Class ------------- */
 
-    .class-arts{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 80%;
-        margin-left: 10%;
-    }
-
-    .class-arts .art-card{
-        width: 100%;
-        margin-bottom: 30px;
-    }
-
-    .class-arts .art-card h2{
-        padding: 10px;
-    }
-}
-
-/* Single Class*/
-
+/*Class Overview*/
 .card-img img{
     z-index: 3;
     width: 97%;
@@ -390,3 +391,222 @@ p{
       transform: rotateZ(360deg);
     }
   }
+
+  /*Equipments*/
+  .equipments{
+    margin-top: 30px;
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .armor-items{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .armor-peice-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3px;
+  }
+
+  .armor-peice-container div{
+    height: 56px;
+    width: 56px;
+    border: solid 3px rgb(153,50,204);
+    border-radius: 50%;
+    align-items: center;
+    justify-items: center;
+    background-color: #8e8d9d;
+  }
+
+  .armor-peice-container p{
+    font-size: var(--text-font-size-min);
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  .armor-peice-container img{
+    height: 40px;
+    width: 40px;
+    margin: 8px ;
+  }
+  /*Armor*/
+
+  .armor-set img{
+    height: 128px;
+    width: 96px;
+    margin-left: 20px;
+  }
+
+  .armor-set div{
+    border: solid 3px rgb(153,50,204);
+    background-color: #8e8d9d;
+    border-radius: 10%;
+    margin-top: 13%;
+    margin-left: 30px;
+  }
+
+  .armor-set p{
+    margin-left: 30px;
+  }
+
+  /*Main Wearpon*/
+
+  .main-wearpon img{
+    height: 80%;
+    width: 71px;
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+
+  .main-wearpon div{
+    border: solid 3px rgb(153,50,204);
+    background-color: #8e8d9d;
+    border-radius: 10%;
+    height: 128px;
+    width: 112px;
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+
+  .main-wearpon p{
+    margin-left: 45px;
+  }
+
+  /*Accessories*/
+  .accessories{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 45%;
+  }
+
+  .accessories-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .accessories img{
+    width: 32px;
+    height: 32px;
+    margin: 8px;
+  }
+
+  .accessorie-item{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+  }
+
+  .accessorie-item div{
+    border: solid 3px rgb(153,50,204);
+    background-color: #8e8d9d;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+  }
+
+  .accessorie-item p{
+    margin-top: 15px;
+  }
+
+  .accessorie-item .solar-border, .main-wearpon .solar-border, .armor-set .solar-border, .armor-peice-container .solar-border{
+    border: solid 3px #ff6700;
+  }
+
+  .accessorie-item .vortex-border, .main-wearpon .vortex-border, .armor-set .vortex-border, .armor-peice-container .vortex-border{
+    border: solid 3px #00ffef;
+  }
+
+  .scope{
+    height: 32px !important;
+    width: 32px !important;
+  }
+
+  .sdmg{
+    height: 64px !important;
+    width: 96px !important;
+    margin-left: 10px !important;
+    margin-top: 30px !important;
+  }
+  
+  .accessorie-item .stardust-border, .main-wearpon .stardust-border, .armor-set .stardust-border, .armor-peice-container .stardust-border{
+    border: solid 3px #00aae4;
+  }
+  
+  .armor{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .class-items{
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* ------------- Reponsividade ------------- */
+
+  @media (max-width:768px) {
+    /* Defaults*/
+    .glass-footer{
+        background-size: cover;
+    }
+
+
+    /*Home*/
+
+    #home-main-title{
+            height: 5rem ;
+            padding: 10px;
+        }
+
+    .home-content-container{
+        height: 325vh !important;
+    }
+
+    .class-arts{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .class-arts .art-card{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .class-arts .art-card h2{
+        padding: 10px;
+    }
+    /*Single Class*/
+
+    .content-container{
+        height: 175vh;
+    }
+    
+    .equipments{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-wearpon{
+        margin-left: 5px;
+        margin-top: 40px;
+    }
+
+    .accessories{
+        flex-direction: row;
+    }
+
+    .accessories-row{
+        flex-direction: column;
+    }
+}
