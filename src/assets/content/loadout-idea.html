@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terraria Class Loadouts - Loadout de Regeneração</title>
+  <link rel="stylesheet" href="../../styles/style.css" />
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png" />
+  <link rel="manifest" href="../../../site.webmanifest" />
+  <!--Menu scripts-->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
+  <script src="/src/js/menuScript.js"></script>
+  <script src="/src/js/menuGenerator.js"></script>
+</head>
+
+<body>
+  <main class="class-page">
+    <div class="content-container" id="form-page">
+      <div id="form-new-set-title">
+        <center>
+          <h1>Tem uma ideia de Loadout? Envie ela!!</h1>
+        </center>
+      </div>
+      <form action="#" class="new-class-form">
+        <p id="loadout-name-p">
+          <label for="loadout-name">Nome Loadout:</label><input id="loadout-name" class="input-formater" type="text"
+            maxlength="30" required placeholder="Digite aqui!" />
+        </p>
+        <div id="loadout-basic-fields">
+          <div id="loadout-mode-container">
+            <p>Fase do Jogo:</p>
+            <p id="loadout-mode-p">
+              <input id="loadout-pre-hard-mode" type="radio" maxlength="30" required checked /><label
+                for="loadout-pre-hard-mode">Pre-Hardmode</label>
+              <input id="loadout-hard-mode" type="radio" maxlength="30" required /><label
+                for="loadout-hard-mode">Hardmode</label>
+            </p>
+          </div>
+          <div id="loadout-objective-container">
+            <p><label for="loadout-objective">Objetivo:</label></p>
+            <textarea class="input-formater textarea-formater" id="loadout-objective" cols="60" rows="4"
+              placeholder="Fale o que o set faz!!"></textarea>
+          </div>
+
+        </div>
+        <h3>Equipamentos</h3>
+        <div id="loadout-armor-container">
+          <div>
+            <label for="new-armor-helmet">
+              <p>Elmo:</p>
+            </label><input id="new-armor-helmet" class="input-formater" type="text" maxlength="30" required />
+          </div>
+          <div class="new-armor-chestplate-container">
+            <label for="new-armor-chestplate">
+              <p>Petoral:</p>
+            </label><input id="new-armor-chestplate" class="input-formater" type="text" maxlength="30" required />
+          </div>
+          <div>
+            <label for="new-armor-leggings">
+              <p>Calças: </p>
+            </label><input id="new-armor-leggings" class="input-formater" type="text" maxlength="30" required />
+          </div>
+        </div>
+        <h3>Acessorios</h3>
+        <div id="loadout-accessories-container">
+          <div class="new-loadout-accessorie-row">
+            <p class="new-loadout-accessorie-item">
+              <label for="new-armor-accessory-1">Accessorio 1:</label><br>
+              <input id="new-armor-accessory-1" class="input-formater" type="text" maxlength="30" required />
+            </p>
+            <p class="new-loadout-accessorie-item">
+              <label for="new-armor-accessory-2">Accessorio 2:</label><br>
+              <input id="new-armor-accessory-2" class="input-formater" type="text" maxlength="30" required />
+            </p>
+            <p class="new-loadout-accessorie-item">
+              <label for="new-armor-accessory-3">Accessorio 3: </label><br>
+              <input id="new-armor-accessory-3" class="input-formater" type="text" maxlength="30" required />
+            </p>
+          </div>
+          <div class="new-loadout-accessorie-row">
+            <p class="new-loadout-accessorie-item">
+              <label for="new-armor-accessory-4">Accessorio 4: </label><br>
+              <input id="new-armor-accessory-4" class="input-formater" type="text" maxlength="30" required />
+            </p>
+            <p class="new-loadout-accessorie-item">
+              <label for="new-armor-accessory-5">Accessorio 5: </label><br>
+              <input id="new-armor-accessory-5" class="input-formater" type="text" maxlength="30" required />
+            </p>
+            <p class="new-loadout-accessorie-item">
+              <label for="new-armor-accessory-6">Accessorio 6: </label><br>
+              <input id="new-armor-accessory-6" class="input-formater" type="text" maxlength="30" required />
+            </p>
+          </div>
+        </div>
+        <input type="submit" id="form-btn-submit" value="Enviar">
+      </form>
+    </div>
+    </div>
+  </main>
+  <footer>
+    <div class="glass-footer">
+      <a href="https://github.com/Diniz-s-flavio" target="_blank">
+        <p>Copyright<i class="bx bx-copyright"></i> Diniz-s-flavio</p>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>

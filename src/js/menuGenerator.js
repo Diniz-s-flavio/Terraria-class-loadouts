@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Criação do elemento nav
     var navElement = document.createElement("nav");
     navElement.className = "menuBar";
@@ -31,8 +31,8 @@ document.addEventListener("DOMContentLoaded", function() {
         <li class="menuItem"><a href="../content/summoner-class.html">
             <p>Invocador</p>
         </a></li>
-        <li class="menuItem"><a href="../content/super-regen.html">
-            <p>Super Regen</p>
+        <li class="menuItem"><a href="../content/loadout-idea.html">
+            <p>Adicionar Set</p>
         </a></li>
     </ul>
     `;
