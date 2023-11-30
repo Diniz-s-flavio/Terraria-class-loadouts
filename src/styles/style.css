@@ -667,6 +667,7 @@ height: 105vh;
   color: white;
   border: none;
   box-shadow: 0px 10px 10px rgba(100, 70, 49, 0.95);
+  cursor: pointer;
 }
 
 #form-btn-submit:hover {
