@@ -628,6 +628,7 @@ height: 105vh;
   color: #000;
   padding-left: 5px;
   padding-top: 5px;
+  cursor: pointer;
 }
 
 .input-formater::placeholder{
